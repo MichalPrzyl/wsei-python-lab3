@@ -1,20 +1,19 @@
-# This is a sample Python script.
+class Person:
+    first_name: object
+    last_name: str
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.show_info_another()
 
-
-def main(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'hello there')  # Press Ctrl+F8 to toggle the breakpoint.
-    x = 2
-    y = 6
-    pass
-    print("another print")
+    def show_info_another(self) -> None:
+        print("created")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    main('PyCharm')
+def main():
+    p1 = Person("Michał", "Przyłucki")
+    print(p1)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
