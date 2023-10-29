@@ -16,6 +16,9 @@ class Animal:
         print(f"name: {self.name}")
         print(f"sound: {self.sound}")
 
+    def __str__(self):
+        return self.name
+
 
 class Dog(Animal):
     def __init__(self, name, sound, family):
