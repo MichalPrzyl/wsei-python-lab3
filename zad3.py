@@ -20,6 +20,9 @@ class Calculator:
         self.num1 = num1
         self.num2 = num2
 
+    def __str__(self):
+        return f"num1: {self.num1}, num2: {self.num2}"
+
     def add(self):
         return self.num1 + self.num2
 

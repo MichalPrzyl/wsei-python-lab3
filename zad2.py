@@ -14,6 +14,9 @@ class Student:
         self.chem = chem
         self.bio = bio
 
+    def __str__(self):
+        return self.name
+
     def total_obtained(self):
         return self.name + self.phy + self.chem + self.bio
 

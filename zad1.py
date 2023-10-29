@@ -11,5 +11,8 @@ class Point:
         self.y = y
         self.z = z
 
+    def __str__(self):
+        return f"x: {self.x}, y: {self.y}, z: {self.z}"
+
     def square_sum(self):
         return self.x**2 + self.y**2 + self.z**2

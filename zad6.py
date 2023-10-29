@@ -16,6 +16,9 @@ class Account:
         self.title = title
         self.balance = balance
 
+    def __str__(self):
+        return self.title
+
     def get_balance(self):
         return self.balance
 
